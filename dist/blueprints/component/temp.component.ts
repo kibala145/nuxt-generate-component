@@ -1,12 +1,4 @@
-import Vue from 'vue';
-import Component from 'vue-class-component';
+import { Component, Vue } from 'nuxt-property-decorator'
 
-@Component({})
-export default class {{(name.split('/')[name.split('/').length-1]) | pascalCase}}Component extends Vue {
-
-  mounted (){
-    console.log('hello from app');
-  }
-  
-}
-
+@Component
+export default class {{(name.split('/')[name.split('/').length-1]) | pascalCase}}Component extends Vue {}
