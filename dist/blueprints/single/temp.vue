@@ -1,6 +1,5 @@
 <template>
-  <div :class="$style.wrapper">
-  </div>
+  <div :class="$style.wrapper"></div>
 </template>
 
 <script lang="ts">
@@ -11,5 +10,6 @@ export default class {{(name.split('/')[name.split('/').length-1]) | pascalCase}
 </script>
 
 <style lang="scss" module>
-.wrapper {}
+.wrapper {
+}
 </style>
